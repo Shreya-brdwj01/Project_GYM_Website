@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kick Start Co.</title>
+
+<style>
+    /* .left div{
+        color: rgb(218, 13, 108);
+    } */
+body{
+    margin: 0px;
+    padding: 0px;
+    background: url('img/gym img.jpg');
+    height:1000px;
+}
+.left{
+    display: block;
+    /* border:5px solid blue; */
+    position:absolute;
+    /* left:34px;
+    top:20px; */
+}
+.left img{
+    width:80px;
+     /* filter: invert(100%);  */
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-right: auto;
+}
+.left div{
+    text-align: center;
+    color:#ced6dd;
+}
+ .mid{
+    display:flex;
+    /* border:5px solid greenyellow; */
+    margin-left:  320px;
+    position: absolute;
+} 
+.right{
+    position: absolute;
+    right: 34px;
+    top:20px;
+    display: flex;
+    border:5px solid;
+}
+ .navbar{
+    display:inline-block;
+}
+.navbar li{
+    display: inline-block;
+    padding: 24px;
+    color: #ced6dd;
+}
+/* .right button{
+    color:aquamarine;
+} */
+.navbar li a:hover, .navbar li a.active{
+    color:rgb(154, 169, 218);
+} 
+.right button:hover, .right button.active{
+    color:rgb(24, 73, 235);
+    background-color: rgb(186, 206, 233);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.header{
+    padding-bottom: 9%;
+}
+
+.form{
+    margin-left: 400px;
+    color: rgb(217 235 145);
+    display: inline-block;
+}
+h2{
+    margin-left: 80px;
+    margin-top: 5px;
+}
+h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.formgroup{
+    color: white;
+    display: inline-block;
+    color:#bdc7cf;
+    margin-left: 10px;
+}
+
+</style>
+</head>
+
+<body>
+    
+    <div class="header">
+        
+        <div class ="left">
+            <div><img src="img/gym logo.png" alt="">
+            
+            <div>Kick Start Co.</div>
+        </div>
+        </div>
+
+         <div class="mid">
+            <ul class="navbar">
+                <li><a href> Home</a></li>
+                <li><a href> About Us</a></li>
+                <li><a href> Fitness calculator</a></li>
+                <li><a href> Contact Us</a></li>
+            </ul>
+        </div> 
+
+        <div class="right">
+             <button>Join Us</button>
+        </div>
+</div>
+
+    <div class="form">
+        <h1>Welcome to Kick Start Co.</h1>
+        <h2> Are You Ready??</h2>
+    </div>
+<form action ="noaction.php">
+
+    <div class="formgroup">
+     Full Name: <br> <input type="text" name="" placeholder="Enter Your name" size="50">
+    </div>
+    <br>
+
+    <div class="formgroup">
+     Email: <br>   <input type="text" name="" placeholder="Enter Your email ID" size="50">
+    </div><br>
+
+    <div class="formgroup">
+    Contact: <br> <input type="text" name="" placeholder="Enter Your contact no." size="50">
+    </div><br>
+
+    <div class="formgroup">
+     Locality: <br>  <input type="text" name="" placeholder="Enter Your loacality" size="50">
+    </div><br>
+
+    <div class="formgroup">
+      Gender: <br> Male <input type="radio" name="a" placeholder="Enter Your Name" >Female<input type="radio" name="a">
+    </div><br><br>
+
+    <div class="formgroup">
+        Age Group:<br><Select name="age">
+            <option>18-25</option>
+            <option>26-40</option>
+            <option>41-60</option>
+            <option>60 & above</option>
+        </Select>
+    </div><br>
+
+    <div class="formgroup">
+        Message(if any)<br><textarea cols="40" rows="3"></textarea>
+    </div><br>
+
+    <div class="formgroup">
+        Submit<br><input type="submit">
+    </div>
+
+    <div class="formgroup">
+        Reset<br><input type="reset">
+    </div>
+     
+    
+
+</form>
+        
+    
+</body>
+</html>
